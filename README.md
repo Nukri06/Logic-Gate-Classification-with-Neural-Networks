@@ -1,79 +1,81 @@
-Logic Gate Classification with Neural Networks
+# Logic Gate Classification with Neural Networks
+
 This repository contains an implementation of a Multi-Layer Perceptron (MLP) to solve basic logical problems: AND, OR, and XOR. The project demonstrates the capability of neural networks to handle both linearly separable and non-linearly separable data.
 
-Author
-Nukri Munjishvili
+## Author
 
-Project Overview
-The main objective of this project is to illustrate the "XOR Problem" in machine learning. While AND and OR gates can be solved with a simple linear classifier, the XOR gate requires a non-linear decision boundary. This project uses MLPClassifier from Scikit-Learn to solve this by utilizing a hidden layer.
+* Nukri Munjishvili
 
-Technical Details
-Libraries Used
-NumPy: For data structure and array manipulation.
+## Project Overview
 
-Matplotlib: For visualizing decision boundaries and data points.
+The main objective of this project is to illustrate the "XOR Problem" in machine learning. While AND and OR gates can be solved with a simple linear classifier, the XOR gate requires a non-linear decision boundary. This project uses `MLPClassifier` from Scikit-Learn to solve this by utilizing a hidden layer.
 
-Scikit-Learn: For the MLPClassifier model.
+## Technical Details
 
-Model Architecture
-Algorithm: Multi-Layer Perceptron (MLP).
+### Libraries Used
 
-Hidden Layers: One hidden layer with 4 neurons.
+* **NumPy:** For data structure and array manipulation.
+* **Matplotlib:** For visualizing decision boundaries and data points.
+* **Scikit-Learn:** For the `MLPClassifier` model.
 
-Activation Function: ReLU (Rectified Linear Unit).
+### Model Architecture
 
-Optimization: The model is trained to classify standard truth tables for logical operations.
+* **Algorithm:** Multi-Layer Perceptron (MLP).
+* **Hidden Layers:** One hidden layer with 4 neurons.
+* **Activation Function:** ReLU (Rectified Linear Unit).
+* **Optimization:** The model is trained to classify standard truth tables for logical operations.
 
-Results
+## Results
+
 The notebook generates visualization plots showing the decision boundaries for each logic gate:
 
-AND & OR: Shows a linear boundary (straight line).
+1. **AND & OR:** Shows a linear boundary (straight line).
+2. **XOR:** Shows a non-linear boundary (curved/complex), proving the necessity of the hidden layer.
 
-XOR: Shows a non-linear boundary (curved/complex), proving the necessity of the hidden layer.
+## How to Run
 
-How to Run
-Ensure Python and the required libraries are installed.
+1. Ensure Python and the required libraries are installed.
+2. Open `Code File.ipynb` in Jupyter Notebook.
+3. Run the cells sequentially to train the models and view the visualizations.
 
-Open Code File.ipynb in Jupyter Notebook.
+---
 
-Run the cells sequentially to train the models and view the visualizations.
+# ლოგიკური ფუნქციების კლასიფიკაცია ნეირონული ქსელებით
 
-ლოგიკური ფუნქციების კლასიფიკაცია ნეირონული ქსელებით
 ეს რეპოზიტორია მოიცავს მრავალშრიანი პერცეპტრონის (MLP) იმპლემენტაციას ლოგიკური ამოცანების გადასაჭრელად: AND, OR და XOR. პროექტი აჩვენებს ნეირონული ქსელების უნარს, იმუშაონ როგორც წრფივად განცალკევებად, ისე არაწრფივ მონაცემებთან.
 
-ავტორი
-ნუკრი მუნჯიშვილი
+## ავტორი
 
-პროექტის მიმოხილვა
-პროექტის მთავარი მიზანია მანქანურ სწავლებაში ცნობილი "XOR პრობლემის" ილუსტრირება. თუ AND და OR ფუნქციების ამოხსნა შესაძლებელია მარტივი წრფივი კლასიფიკატორით, XOR მოითხოვს არაწრფივ გადაწყვეტილების საზღვარს. აღნიშნული პრობლემის გადასაჭრელად გამოყენებულია Scikit-Learn-ის MLPClassifier და ფარული შრე (Hidden Layer).
+* ნუკრი მუნჯიშვილი
 
-ტექნიკური დეტალები
-გამოყენებული ბიბლიოთეკები
-NumPy: მონაცემთა სტრუქტურებისა და მასივების დასამუშავებლად.
+## პროექტის მიმოხილვა
 
-Matplotlib: გადაწყვეტილების საზღვრებისა (Decision Boundaries) და მონაცემთა ვიზუალიზაციისთვის.
+პროექტის მთავარი მიზანია მანქანურ სწავლებაში ცნობილი "XOR პრობლემის" ილუსტრირება. თუ AND და OR ფუნქციების ამოხსნა შესაძლებელია მარტივი წრფივი კლასიფიკატორით, XOR მოითხოვს არაწრფივ გადაწყვეტილების საზღვარს. აღნიშნული პრობლემის გადასაჭრელად გამოყენებულია Scikit-Learn-ის `MLPClassifier` და ფარული შრე (Hidden Layer).
 
-Scikit-Learn: MLPClassifier მოდელის გამოსაყენებლად.
+## ტექნიკური დეტალები
 
-მოდელის არქიტექტურა
-ალგორითმი: Multi-Layer Perceptron (MLP).
+### გამოყენებული ბიბლიოთეკები
 
-ფარული შრეები: ერთი ფარული შრე 4 ნეირონით.
+* **NumPy:** მონაცემთა სტრუქტურებისა და მასივების დასამუშავებლად.
+* **Matplotlib:** გადაწყვეტილების საზღვრებისა (Decision Boundaries) და მონაცემთა ვიზუალიზაციისთვის.
+* **Scikit-Learn:** `MLPClassifier` მოდელის გამოსაყენებლად.
 
-აქტივაციის ფუნქცია: ReLU.
+### მოდელის არქიტექტურა
 
-ოპტიმიზაცია: მოდელი სწავლობს სტანდარტული ლოგიკური ჭეშმარიტების ცხრილების მიხედვით.
+* **ალგორითმი:** Multi-Layer Perceptron (MLP).
+* **ფარული შრეები:** ერთი ფარული შრე 4 ნეირონით.
+* **აქტივაციის ფუნქცია:** ReLU.
+* **ოპტიმიზაცია:** მოდელი სწავლობს სტანდარტული ლოგიკური ჭეშმარიტების ცხრილების მიხედვით.
 
-შედეგები
+## შედეგები
+
 კოდის გაშვების შედეგად იქმნება გრაფიკები, რომლებიც აჩვენებს თითოეული ლოგიკური ელემენტის საზღვრებს:
 
-AND & OR: აჩვენებს წრფივ საზღვარს (სწორ ხაზს).
+1. **AND & OR:** აჩვენებს წრფივ საზღვარს (სწორ ხაზს).
+2. **XOR:** აჩვენებს არაწრფივ საზღვარს, რაც ადასტურებს ფარული შრის საჭიროებას.
 
-XOR: აჩვენებს არაწრფივ საზღვარს, რაც ადასტურებს ფარული შრის საჭიროებას.
+## გაშვების ინსტრუქცია
 
-გაშვების ინსტრუქცია
-დარწმუნდით, რომ დაინსტალირებული გაქვთ Python და საჭირო ბიბლიოთეკები.
-
-გახსენით Code File.ipynb Jupyter Notebook-ში.
-
-გაუშვით უჯრები თანმიმდევრობით, რათა დაატრენინგოთ მოდელები და ნახოთ ვიზუალიზაციები.
+1. დარწმუნდით, რომ დაინსტალირებული გაქვთ Python და საჭირო ბიბლიოთეკები.
+2. გახსენით `Code File.ipynb` Jupyter Notebook-ში.
+3. გაუშვით უჯრები თანმიმდევრობით, რათა დაატრენინგოთ მოდელები და ნახოთ ვიზუალიზაციები.
